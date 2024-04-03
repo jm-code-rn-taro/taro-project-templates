@@ -21,6 +21,7 @@ const handler = {
   '/metro.config.js': notToChangeExt,
   '/tsconfig.json': createWhenTs,
   '/types/global.d.ts': createWhenTs,
+   '/react-native-oh-library/react-native-oh-tpl-clipboard-1.13.2-0.0.3.tgz':notToChangeExt,
   '/src/pages/index/index.jsx' (err, { pageName = '', pageDir = '', subPkg = '' }) {
     return {
       setPageName: normalizePath(path.join(PAGES_ENTRY, pageDir, pageName, 'index.jsx')),
